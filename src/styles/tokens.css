@@ -1,0 +1,305 @@
+@theme {
+  --color-*: initial;
+
+  --color-page: #f4f3ea;
+  --color-surface: #ffffff;
+  --color-surface-active: #e9ebe6;
+  --color-surface-dark: #171b20;
+  --color-ink: #181818;
+  --color-ink-soft: #3b3b3b;
+  --color-on-surface: #000000;
+  --color-action: #1e1e1e;
+  --color-on-action: #ffffff;
+  --color-on-dark: #ffffff;
+  --color-muted: #a4a7ae;
+  --color-hero-muted: #cbccce;
+  --color-surface-subtle: #f7f7f7;
+  --color-progress: #34c759;
+  --color-track: #d5d7da;
+  --color-step-tag: #a3a3a3;
+  --color-text-soft: #838383;
+  --color-surface-highlight: #f8f8f8;
+  --color-paragraph: #545459;
+  --color-divider: #e9eaeb;
+  --color-on-dark-soft: #d7d3d3;
+  --color-faq-surface: #fafafa;
+  --color-faq-question: #323232;
+  --color-card-muted: #a6a6a6;
+  --color-field-hint: #767676;
+  --color-error: #b42318;
+  --color-partner-text: #6d6d6d;
+  --color-partner-border: #e7e7e7;
+  --color-action-green: #00a933;
+  --color-card-border: #e5e5e5;
+  --color-brand: #03392b;
+  --color-accent: #e3a03a;
+  --color-accent-soft: #fcefdc;
+  --color-overlay: #161616;
+  --color-border-on-dark: rgb(255 255 255 / 0.2);
+
+  --font-heading: 'Urbanist', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+  --font-serif: 'IBM Plex Serif', serif;
+  --font-logo: 'Alike', serif;
+
+  --text-logo: 1.25rem;
+  --text-logo--line-height: 1.1;
+  --text-logo--letter-spacing: -0.01em;
+  --text-nav: 1rem;
+  --text-nav--line-height: normal;
+  --text-cta: 1rem;
+  --text-cta--line-height: 1.45;
+  --text-cta--letter-spacing: -0.01em;
+  --text-button: 1rem;
+  --text-button--line-height: 1.1;
+  --text-button--letter-spacing: -0.04em;
+  --text-hero-title: clamp(2.4rem, 1.8725rem + 2.26vw, 4rem);
+  --text-hero-title--line-height: 1.1;
+  --text-hero-title--letter-spacing: -0.02em;
+  --text-hero-lede: clamp(1.225rem, 1.15rem + 0.31vw, 1.4375rem);
+  --text-hero-lede--line-height: 1.45;
+
+  --text-statement-heading: clamp(2rem, 1.608rem + 1.672vw, 3.188rem);
+  --text-statement-heading--line-height: 1.1;
+  --text-statement-lede: clamp(1.75rem, 1.5025rem + 1.0554vw, 2.5rem);
+  --text-statement-lede--line-height: 1.2;
+  --text-statement-lede--letter-spacing: -0.02em;
+
+  --leading-statement-heading-md: 1.2;
+  --leading-statement-lede-md: 1.3;
+
+  --text-section-heading: clamp(2rem, 1.629rem + 1.583vw, 3.125rem);
+  --text-section-heading--line-height: 1.2;
+  --text-section-heading--letter-spacing: -0.04em;
+  --text-label: 1.125rem;
+  --text-label--line-height: 1.2;
+  --text-label--letter-spacing: -0.03em;
+  --text-step-label: 1.25rem;
+  --text-step-label--line-height: normal;
+  --text-step-label--letter-spacing: -0.02em;
+  --text-step-label-sm: 0.875rem;
+  --text-step-label-sm--line-height: 1.2;
+  --text-step-label-sm--letter-spacing: -0.02em;
+  --text-step-title: 2rem;
+  --text-step-title--line-height: 1;
+  --text-step-title-sm: 1.25rem;
+  --text-step-title-sm--line-height: 1.2;
+  --text-step-body: 1.125rem;
+  --text-step-body--line-height: 1.3333;
+  --text-step-body-sm: 1rem;
+  --text-step-body-sm--line-height: 1.4;
+  --text-marker: 1rem;
+  --text-marker--line-height: 1.5;
+  --text-group-title: clamp(1.75rem, 10.67cqw, 3rem);
+  --text-group-title--line-height: 1.2;
+  --text-group-title--letter-spacing: -0.02em;
+  --text-group-title-compact: clamp(1.5rem, 8.67cqw, 2.4375rem);
+  --text-group-title-compact--line-height: 1.2;
+  --text-group-title-compact--letter-spacing: -0.02em;
+  --text-group-body: clamp(1rem, 4cqw, 1.125rem);
+  --text-group-body--line-height: 1.5;
+  --text-group-body-compact: 1rem;
+  --text-group-body-compact--line-height: 1.55;
+  --text-group-footer: clamp(1rem, 4.44cqw, 1.25rem);
+  --text-group-footer--line-height: 1.5;
+  --text-banner-title: clamp(2rem, 1.175rem + 3.518vw, 4.5rem);
+  --text-banner-title--line-height: 1.2;
+  --text-banner-text: 1rem;
+  --text-banner-text--line-height: 1.5;
+  --text-faq-question: clamp(1.125rem, 1.0425rem + 0.3518vw, 1.375rem);
+  --text-faq-question--line-height: 1.2727;
+  --text-partner-title: clamp(1.5rem, 1.3rem + 0.8vw, 1.75rem);
+  --text-partner-title--line-height: 1.4286;
+  --text-partner-name: clamp(2.25rem, 1.65rem + 3vw, 3rem);
+  --text-partner-name--line-height: 1.2;
+  --text-partner-name--letter-spacing: -0.02em;
+  --text-donate-lede: clamp(1.0625rem, 0.945rem + 0.587vw, 1.5rem);
+  --text-donate-lede--line-height: 1.4;
+  --text-donate-lede--letter-spacing: -0.0083em;
+  --text-donate-card-title: clamp(1.75rem, 1.549rem + 1.007vw, 2.5rem);
+  --text-donate-card-title--line-height: 1.5;
+  --text-donate-card-title--letter-spacing: -0.05em;
+  --text-donate-value: clamp(1.25rem, 1.116rem + 0.671vw, 1.75rem);
+  --text-donate-value--line-height: 1.2;
+  --text-donate-value--letter-spacing: -0.02em;
+  --text-donate-number: clamp(1.375rem, 0.4rem + 4.6vw, 3rem);
+  --text-donate-number--line-height: 1.2;
+  --text-donate-number--letter-spacing: -0.02em;
+  --text-donate-notice: clamp(1.0625rem, 0.995rem + 0.336vw, 1.3125rem);
+  --text-donate-notice--line-height: 1.3333;
+  --text-field: 1rem;
+  --text-field--line-height: 1.375;
+  --text-field-sm: 0.875rem;
+  --text-field-sm--line-height: 1.5714;
+  --text-contact-row: 1.125rem;
+  --text-contact-row--line-height: 1.5;
+  --text-footer-logo: clamp(2.25rem, 1.575rem + 3.6vw, 3rem);
+  --text-footer-logo--line-height: 1.5;
+  --text-footer-title: 1rem;
+  --text-footer-title--line-height: 1.6;
+  --text-footer-link: 0.875rem;
+  --text-footer-link--line-height: 1.6;
+  --text-newsletter-title: 1.5rem;
+  --text-newsletter-title--line-height: 1.4;
+
+  --radius-control: 0.375rem;
+  --radius-card: 1.125rem;
+  --radius-banner: 1.5rem;
+  --radius-highlight: 1.5rem;
+  --radius-image: 0.75rem;
+  --radius-panel: 0.5rem;
+  --radius-button: 0.8125rem;
+
+  --spacing-header-inset: 1rem;
+  --spacing-header-gutter: 4rem;
+  --spacing-gutter: 1.25rem;
+  --spacing-gutter-lg: 2.25rem;
+
+  --container-content: 82rem;
+  --container-hero: 90rem;
+  --container-statement-lede: 45ch;
+  --container-recognition: 87rem;
+  --container-banner-content: 77rem;
+  --container-banner-title: 45.875rem;
+  --container-banner-text: 32.125rem;
+  --container-programs-heading: 36.875rem;
+  --container-faq: 52.5rem;
+  --container-faq-answer: 44.6875rem;
+  --container-contact: 82.5rem;
+  --container-donate-text: 41.75rem;
+  --width-donate-card: 37.5rem;
+  --container-partner-pill: 18.8125rem;
+  --width-partner-card: 23.3125rem;
+  --size-partner-logo: 13.75rem;
+  --container-hero-lede: 39.1875rem;
+
+  --width-card-mobile: clamp(16.25rem, 80vw, 24rem);
+  --size-card: 29.0625rem;
+  --height-banner: 36rem;
+
+  --width-reasons-image: 28.125rem;
+  --height-reasons-image: 21.875rem;
+
+  --shadow-highlight:
+    0 0.6px 1px rgb(0 0 0 / 0.04), 0 2px 0 rgb(223 222 222 / 0.42),
+    inset 0 -2px 2px rgb(255 255 255 / 0.48),
+    inset 0 2px 0 rgb(255 255 255 / 0.64);
+  --shadow-partner-card: 0 2px 10px rgb(196 196 196 / 0.16);
+  --shadow-donate-number: inset 0 2px 0 rgb(255 255 255 / 0.64);
+  --shadow-banner-inset: inset 0 4px 4px rgb(0 0 0 / 0.1);
+  --shadow-button: 0 2px 10px rgb(0 0 0 / 0.25);
+
+  --opacity-overlay: 0.7;
+  --opacity-overlay-mobile: 0.9;
+
+  --object-position-hero: 60% 50%;
+  --object-position-donate: 45% 50%;
+  --object-position-banner: 55% 28%;
+
+  --gradient-progress-tail: linear-gradient(
+    to bottom,
+    var(--color-progress),
+    transparent
+  );
+  --gradient-banner-overlay: linear-gradient(
+    206.69deg,
+    rgb(102 102 102 / 0) 27.605%,
+    rgb(0 0 0 / 0.6) 79.336%
+  );
+  --gradient-banner-overlay-mobile: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.7),
+    transparent 75%
+  );
+  --gradient-banner-strip: linear-gradient(
+    to right,
+    rgb(255 255 255 / 0.12),
+    rgb(33 33 33 / 0.12) 4.336%,
+    rgb(197 197 197 / 0.12)
+  );
+  --gradient-hero-title: linear-gradient(
+    173.79deg,
+    var(--color-surface) 40.783%,
+    var(--color-accent-soft) 73.109%,
+    var(--color-accent) 107.34%
+  );
+  --gradient-donate-title: linear-gradient(
+    162.74deg,
+    var(--color-surface) 40.783%,
+    var(--color-accent-soft) 73.109%,
+    var(--color-accent) 107.34%
+  );
+  --gradient-donate-overlay: linear-gradient(
+    192.81deg,
+    transparent 8.5749%,
+    color-mix(in srgb, var(--color-overlay) 64%, transparent) 54.141%,
+    color-mix(in srgb, var(--color-overlay) 80%, transparent) 70.29%,
+    color-mix(in srgb, var(--color-overlay) 80%, transparent) 91.425%
+  );
+  --gradient-hero-overlay: linear-gradient(
+    192.96deg,
+    transparent 8.5749%,
+    color-mix(in srgb, var(--color-overlay) 80%, transparent) 54.141%,
+    var(--color-overlay) 70.29%,
+    var(--color-overlay) 91.425%
+  );
+}
+
+:root {
+  --header-height: 4.5rem;
+  --content-inset: var(--spacing-gutter);
+  --height-banner-sm: clamp(18rem, 60svh, 28rem);
+  --height-reasons-image-sm: clamp(5rem, 13svh, 18rem);
+  --reasons-y-max: 3rem;
+  --reasons-gap-max: 2rem;
+  --reasons-step-max: 1rem;
+  --reasons-y: var(--reasons-y-max);
+  --reasons-gap: var(--reasons-gap-max);
+  --reasons-step: var(--reasons-step-max);
+}
+
+@media (width >= theme(--breakpoint-lg)) {
+  :root {
+    --header-height: 5.125rem;
+  }
+}
+
+@media (width >= theme(--breakpoint-md)) {
+  :root {
+    --content-inset: max(
+      var(--spacing-header-gutter),
+      calc((100% - var(--container-content)) / 2)
+    );
+  }
+}
+
+@media (height < 40rem) {
+  :root {
+    --text-statement-lede: clamp(1.5rem, 4.5svh, 2.5rem);
+  }
+}
+
+@media (width >= theme(--breakpoint-md)) {
+  :root {
+    --reasons-y-max: 4.375rem;
+    --reasons-gap-max: 5rem;
+    --reasons-step-max: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-height: 600px) {
+  :root {
+    --reasons-y: clamp(0.25rem, 2svh, var(--reasons-y-max));
+    --reasons-gap: clamp(0.5rem, 2.5svh, var(--reasons-gap-max));
+    --reasons-step: clamp(0.5rem, 1.6svh, var(--reasons-step-max));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-height: 600px) and (width >= theme(--breakpoint-lg)) {
+  :root {
+    --reasons-y: clamp(0.5rem, 3.5svh, var(--reasons-y-max));
+    --reasons-gap: clamp(0.75rem, 4svh, var(--reasons-gap-max));
+    --reasons-step: clamp(0.5rem, 2svh, var(--reasons-step-max));
+  }
+}

@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './tokens.css';
+
+@custom-variant tall (@media (min-height: 600px));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-page font-body text-ink;
+  }
+
+  section[id] {
+    scroll-margin-top: var(--header-height);
+  }
+
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+@utility scrollbar-hidden {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
